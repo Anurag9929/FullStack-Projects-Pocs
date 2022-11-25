@@ -1,0 +1,49 @@
+package Com.hibernate.Project1.hibernateProject1;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+//        SessionFactory session=new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+//        System.out.println(session);
+////        session.getCurrentSession();
+//        System.out.println(session.isClosed());
+        
+        Configuration cfg=new Configuration();
+        cfg.configure("hibernate.cfg.xml");
+        SessionFactory factory=cfg.buildSessionFactory();
+        
+        //creating Student
+        Student st=new Student();
+        st.setId(102);
+        st.setName("Shivraj Singh");
+        st.setCity("Coimbatore");
+        
+       System.out.println(st);
+//       Session session= factory.getCurrentSession();
+       Session session= factory.openSession();
+       
+//       session.beginTransaction();
+       org.hibernate.Transaction trx=session.beginTransaction();
+       session.save(st);
+        
+//       session.getTransaction().commit();
+           trx.commit();        
+       
+       
+//       session.close();
+        System.out.println(factory);
+//        System.out.println(factory.getCurrentSession() );
+//        System.out.println(factory.isClosed());
+    }
+}

@@ -1,0 +1,16 @@
+package Com.hibernate.mapping;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Embeddable
+@Entity
+public class Answer {
+	@Id
+	@Column(name="answer_id")
+	private int ansId;
+	private String answer;
+
+}

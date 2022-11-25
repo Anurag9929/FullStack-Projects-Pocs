@@ -1,0 +1,10 @@
+package Com.hibernate.many_to_many_mapping;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Project {
+	private int pid;
+	private String projectName;
+
+}

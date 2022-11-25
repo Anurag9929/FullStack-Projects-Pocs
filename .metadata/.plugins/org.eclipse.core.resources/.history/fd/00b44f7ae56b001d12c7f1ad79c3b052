@@ -1,0 +1,5 @@
+package Com.hibernate.mapping;
+
+public class Question {
+
+}

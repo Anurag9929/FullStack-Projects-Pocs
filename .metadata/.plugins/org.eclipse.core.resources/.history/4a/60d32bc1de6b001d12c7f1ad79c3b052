@@ -1,0 +1,28 @@
+package Com.hibernate.Project1.hibernateProject1;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class EmDemo {
+	public static void main(String[] args) {
+		Configuration cfg=new Configuration();
+		cfg.configure();
+		SessionFactory factory=cfg.buildSessionFactory();
+		
+		Student student1=new Student();
+		student1.setId(10001);
+		student1.setName("Atul Singh");
+		student1.setCity("Indore");
+		
+		Certificate cert=new Certificate();
+//		student1.setCertificate(null);
+		Session session=factory.openSession();
+		
+		
+		factory.close();
+		
+	}
+	
+
+}

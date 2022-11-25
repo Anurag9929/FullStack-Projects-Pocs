@@ -1,0 +1,18 @@
+package Com.hibernate.many_to_many_mapping;
+
+import java.util.List;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
+
+@Entity
+public class Employee {
+	@Id
+	private int Eid;
+	private String name;
+	@ManyToMany
+	private List<Project>projects;
+	
+
+}

@@ -1,0 +1,9 @@
+package Com.hibernate.Project1.hibernateProject1;
+
+public class EmDemo {
+	public static void main(String[] args) {
+		
+	}
+	
+
+}

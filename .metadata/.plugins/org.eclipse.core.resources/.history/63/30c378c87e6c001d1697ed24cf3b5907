@@ -1,0 +1,40 @@
+package Com.hibernate.many_to_many_mapping;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class Mapping {
+	public static void main(String[] args) {
+		Configuration cfg=new Configuration();
+		cfg.configure("hibernate.cfg.xml");
+		SessionFactory factory =cfg.buildSessionFactory();
+		
+		Employee e1=new Employee();
+		Employee e2=new Employee();
+		
+		e1.setEid(91);
+		e1.setName("Ram");
+		
+		
+		e2.setEid(92);
+		e2.setName("Shyam");
+		
+		Project p1=new Project();
+		Project p2=new Project();
+		
+		p1.setPid(101);
+		p1.setProjectName("FullStack Project");
+		
+		p2.setPid(102);
+		p2.setProjectName("Front-end Project");
+		
+		
+		List<Employee>list1=new ArrayList<Employee>();
+		List<Project>list2=new ArrayList<Project>();			
+		factory.close();
+	}
+
+}

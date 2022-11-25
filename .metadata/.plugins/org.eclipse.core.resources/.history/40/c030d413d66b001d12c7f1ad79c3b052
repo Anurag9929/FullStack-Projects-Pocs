@@ -1,0 +1,19 @@
+package Com.hibernate.Project1.hibernateProject1;
+
+import java.lang.invoke.ClassSpecializer.Factory;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class FetchDemo {
+ public static void main(String[] args) {
+	//get and load
+	 Configuration cfg= new Configuration();
+	 cfg.configure();
+	 SessionFactory factory =cfg.buildSessionFactory();
+	 
+	 Factory.clo
+	 
+	 
+}
+}

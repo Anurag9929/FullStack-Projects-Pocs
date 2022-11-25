@@ -1,0 +1,13 @@
+package Com.hibernate.Project1.hibernateProject1;
+
+import org.hibernate.cfg.Configuration;
+
+public class EmDemo {
+	public static void main(String[] args) {
+		Configuration cfg=new Configuration();
+		cfg.config
+		
+	}
+	
+
+}

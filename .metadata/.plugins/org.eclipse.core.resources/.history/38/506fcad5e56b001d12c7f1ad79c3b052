@@ -1,0 +1,7 @@
+package Com.hibernate.mapping;
+
+public class Answer {
+	private int ansId;
+	private String answer;
+
+}

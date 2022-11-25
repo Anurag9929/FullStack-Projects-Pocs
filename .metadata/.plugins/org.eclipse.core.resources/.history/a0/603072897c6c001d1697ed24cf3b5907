@@ -1,0 +1,13 @@
+package Com.hibernate.many_to_many_mapping;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Employee {
+	@Id
+	private int Eid;
+	private String name;
+	
+
+}

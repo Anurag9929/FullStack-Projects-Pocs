@@ -1,0 +1,8 @@
+package Com.hibernate.many_to_many_mapping;
+
+public class Employee {
+	private int Eid;
+	private String name;
+	
+
+}

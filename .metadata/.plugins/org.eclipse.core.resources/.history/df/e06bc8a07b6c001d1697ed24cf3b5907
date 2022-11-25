@@ -1,0 +1,5 @@
+package Com.hibernate.many_to_many_mapping;
+
+public class Mapping {
+
+}

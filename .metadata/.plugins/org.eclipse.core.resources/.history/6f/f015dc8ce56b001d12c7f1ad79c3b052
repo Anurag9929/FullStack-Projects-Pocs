@@ -1,0 +1,10 @@
+package Com.hibernate.mapping;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Question {
+	private int questionId;
+	private String question;
+
+}
