@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Training_java\Java_Sample_POCS_Projects\Many_to_Many_mapping_example\hibernateProject1\src\main\java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -25,12 +26,14 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="Com.hibernate.Project1.hibernate_mapping_project"/>
 			<item value="Com.hibernate.Project1.hibernateProject1"/>
 		</list>
 		<list key="groupId">
 			<item value="Com.hibernate.Project1"/>
 		</list>
 		<list key="artifactId">
+			<item value="hibernate_mapping_project"/>
 			<item value="hibernateProject1"/>
 		</list>
 		<list key="projectNameTemplate">

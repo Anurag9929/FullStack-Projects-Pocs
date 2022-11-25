@@ -3500,3 +3500,57 @@ Caused by: java.lang.Exception: File not found: D:\Training_java\Java_Sample_POC
 2022-11-25 15:09:50,479 [Worker-69: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Training_java\Java_Sample_POCS_Projects\Many_to_Many_mapping_example\hibernate_mapping_project\src\main\resources
 2022-11-25 15:09:50,481 [Worker-69: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-11-25 15:09:50,481 [Worker-69: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Training_java\Java_Sample_POCS_Projects\Many_to_Many_mapping_example\hibernate_mapping_project\src\test\resources
+2022-11-25 15:51:41,440 [Worker-71: Building] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - File not found: D:\Training_java\Java_Sample_POCS_Projects\Many_to_Many_mapping_example\hibernateProject1\pom.xml.
+org.eclipse.core.internal.resources.ResourceException: File not found: D:\Training_java\Java_Sample_POCS_Projects\Many_to_Many_mapping_example\hibernateProject1\pom.xml.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:835)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:277)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:268)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:569)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:525)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:367)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:321)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:150)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:88)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:87)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:197)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1024)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:254)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:400)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:403)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:514)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:462)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:544)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.Exception: File not found: D:\Training_java\Java_Sample_POCS_Projects\Many_to_Many_mapping_example\hibernateProject1\pom.xml.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 27 common frames omitted
+2022-11-25 15:51:42,782 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped Server@78042a43{STOPPING}[10.0.11,sto=0]
+2022-11-25 15:51:42,786 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@14221c17{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2022-11-25 15:51:42,792 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3d66c965{/help,null,STOPPED}
+2022-11-25 15:59:25,113 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-11-25 15:59:36,330 [Worker-7: Launching App (1)] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-core:jar:6.1.5.Final has been relocated to org.hibernate.orm:hibernate-core:jar:6.1.5.Final
+2022-11-25 16:09:59,984 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-11-25 16:14:13,682 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-11-25 16:15:51,835 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-11-25 16:16:21,294 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-10.0.11; built: 2022-06-21T21:12:44.640Z; git: d988aa016e0bb2de6fba84c1659049c72eae3e32; jvm 18.0.1+10
+2022-11-25 16:16:21,321 [Start Help Server] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2022-11-25 16:16:21,344 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@637161a2{/help,null,AVAILABLE}
+2022-11-25 16:16:21,362 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@1fbb67d0{HTTP/1.1, (http/1.1)}{127.0.0.1:65532}
+2022-11-25 16:16:21,374 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started Server@3591e46c{STARTING}[10.0.11,sto=0] @48483ms
+2022-11-25 16:16:25,653 [Worker-7: Launching Mapping (1)] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-core:jar:6.1.5.Final has been relocated to org.hibernate.orm:hibernate-core:jar:6.1.5.Final
+2022-11-25 16:16:25,840 [Worker-7: Launching Mapping (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-25 16:16:25,840 [Worker-7: Launching Mapping (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Training_java\Java_Sample_POCS_Projects\java_git_remote_repo\hibernate_mapping_project\src\main\resources
+2022-11-25 16:16:25,843 [Worker-7: Launching Mapping (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-25 16:16:25,843 [Worker-7: Launching Mapping (1)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Training_java\Java_Sample_POCS_Projects\java_git_remote_repo\hibernate_mapping_project\src\test\resources
+2022-11-25 16:17:22,620 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped Server@3591e46c{STOPPING}[10.0.11,sto=0]
+2022-11-25 16:17:22,626 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@1fbb67d0{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2022-11-25 16:17:22,634 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@637161a2{/help,null,STOPPED}

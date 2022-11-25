@@ -1,7 +1,0 @@
-package Com.hibernate.mapping;
-
-public class Question {
-	private int questionId;
-	private String question;
-
-}
